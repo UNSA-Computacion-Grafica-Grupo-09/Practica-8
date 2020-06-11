@@ -3,7 +3,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 
 
-def pixel_division(image1, image2):
+def op_OR(image1, image2):
 
 	img1 = cv2.cvtColor(image1, cv2.cv2.COLOR_BGR2GRAY)
 
@@ -71,6 +71,7 @@ def pixel_division(image1, image2):
 ##
 imagen1 = cv2.imread("log_3.png")
 imagen2 = cv2.imread("log_4.png")
-result = pixel_division(imagen1, imagen2)
+result = op_OR(imagen1, imagen2)
 cv2.imwrite("resOR.png", result)
 cv2.waitKey(0)    
+ 
