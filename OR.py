@@ -49,7 +49,7 @@ def op_OR(image1, image2):
 
 
 
-	############################AND###########
+	################OR#############
 
 	img1Not=NOT(img1)
 	img2Not=NOT(img2)
